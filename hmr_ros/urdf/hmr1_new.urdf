@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="hmr1_new">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.000328264767761471 0.0469820763911274 -0.000788243982875085"
+        rpy="0 0 0" />
+      <mass
+        value="2.1305084129501" />
+      <inertia
+        ixx="0.00604874704371039"
+        ixy="-6.08259039636929E-07"
+        ixz="5.25611955802281E-07"
+        iyy="0.0143264049334494"
+        iyz="-3.14977239842844E-07"
+        izz="0.00939287892018835" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="llink1">
+    <inertial>
+      <origin
+        xyz="0.042486792589286 -0.214263187843722 -0.000542099166301394"
+        rpy="0 0 0" />
+      <mass
+        value="0.427394537952563" />
+      <inertia
+        ixx="0.00260385816027628"
+        ixy="-3.30586558996169E-07"
+        ixz="2.03309305532838E-07"
+        iyy="0.000212516927714212"
+        iyz="-6.06122192022188E-06"
+        izz="0.0027391633004055" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/llink1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/llink1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint1"
+    type="continuous">
+    <origin
+      xyz="0.1275 0.04 -0.06"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="llink1" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="llink2">
+    <inertial>
+      <origin
+        xyz="0.0425064600741104 -0.173055634238792 -0.00123216519157252"
+        rpy="0 0 0" />
+      <mass
+        value="0.439744162079837" />
+      <inertia
+        ixx="0.00261439181848599"
+        ixy="3.79161841979568E-13"
+        ixz="1.02516276502871E-09"
+        iyy="0.000227173840559195"
+        iyz="2.97559047735669E-06"
+        izz="0.00275226749146938" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/llink2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/llink2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint2"
+    type="continuous">
+    <origin
+      xyz="0 -0.438 0"
+      rpy="0 0 0" />
+    <parent
+      link="llink1" />
+    <child
+      link="llink2" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="llink3">
+    <inertial>
+      <origin
+        xyz="0.0424693372065201 -0.0369957693915385 0.0491587525012747"
+        rpy="0 0 0" />
+      <mass
+        value="0.290406827275734" />
+      <inertia
+        ixx="0.000610326383867947"
+        ixy="3.04144783488402E-07"
+        ixz="-2.63875965390432E-07"
+        iyy="0.000683032725339466"
+        iyz="-1.57391386442895E-07"
+        izz="0.000114526622622572" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/llink3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/llink3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint3"
+    type="continuous">
+    <origin
+      xyz="0 -0.440000000000016 0"
+      rpy="0 0 0" />
+    <parent
+      link="llink2" />
+    <child
+      link="llink3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="rlink1">
+    <inertial>
+      <origin
+        xyz="-0.0425132074107156 -0.214263187843722 -0.000542099166301414"
+        rpy="0 0 0" />
+      <mass
+        value="0.427394537952563" />
+      <inertia
+        ixx="0.00260385816027628"
+        ixy="-3.30586558996119E-07"
+        ixz="2.03309305532844E-07"
+        iyy="0.000212516927714212"
+        iyz="-6.06122192022182E-06"
+        izz="0.0027391633004055" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/rlink1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/rlink1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint1"
+    type="continuous">
+    <origin
+      xyz="-0.127500000000052 0.0399999999999903 -0.0599999999999181"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rlink1" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="rlink2">
+    <inertial>
+      <origin
+        xyz="-0.0424935386645717 -0.173055634238792 -0.00123216519159468"
+        rpy="0 0 0" />
+      <mass
+        value="0.439744162079837" />
+      <inertia
+        ixx="0.00261439181848599"
+        ixy="3.79161793096502E-13"
+        ixz="1.02516276502599E-09"
+        iyy="0.000227173840559195"
+        iyz="2.9755904773567E-06"
+        izz="0.00275226749146938" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/rlink2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/rlink2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint2"
+    type="continuous">
+    <origin
+      xyz="0 -0.438 0"
+      rpy="0 0 0" />
+    <parent
+      link="rlink1" />
+    <child
+      link="rlink2" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="rlink3">
+    <inertial>
+      <origin
+        xyz="-0.0425306602707617 -0.0369957693915284 0.0491587525009171"
+        rpy="0 0 0" />
+      <mass
+        value="0.290406827275734" />
+      <inertia
+        ixx="0.000610326383867948"
+        ixy="3.04144783488401E-07"
+        ixz="-2.63875965390426E-07"
+        iyy="0.000683032725339466"
+        iyz="-1.57391386442896E-07"
+        izz="0.000114526622622572" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/rlink3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://hmr1_new/meshes/rlink3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint3"
+    type="continuous">
+    <origin
+      xyz="0 -0.440000000000016 0"
+      rpy="0 0 0" />
+    <parent
+      link="rlink2" />
+    <child
+      link="rlink3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+</robot>
